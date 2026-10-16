@@ -1,0 +1,35 @@
+:root {
+  /* Colors */
+  --navy: #1f2937;
+  --navy-deep: #1f2937;
+  --teal: #3882f6;
+  --teal-dark: #3882f6;
+  --text: #1f2937;
+  --muted: #60748f;
+  --pale: #e5e7eb;
+  --white: #f9faf8;
+  --risk-bg: #ffebe4;
+  --risk-text: #b83b17;
+  --container-width: 1030px;
+
+  /* Typography */
+  --font-hero: 48px;
+  --font-section-heading: 36px;
+  --font-secondary: 18px;
+  --font-logo: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: var(--text);
+  line-height: 1.5;
+}
