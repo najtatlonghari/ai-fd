@@ -608,7 +608,7 @@ input {
     background: var(--white);
   }
 
-  .menu-toggle:focus-visible + .menu-button {
+  .menu-toggle:focus-visible+.menu-button {
     outline: 3px solid var(--teal);
     outline-offset: 3px;
   }
@@ -637,8 +637,8 @@ input {
     margin-block: 8px 4px;
   }
 
-  .menu-toggle:checked ~ .nav-links,
-  .menu-toggle:checked ~ .nav-cta {
+  .menu-toggle:checked~.nav-links,
+  .menu-toggle:checked~.nav-cta {
     display: flex;
   }
 
