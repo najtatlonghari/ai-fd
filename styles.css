@@ -742,3 +742,83 @@ input {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-card {
+  flex: 1 1 250px;
+  min-width: 0;
+  padding: 22px;
+  border-radius: 12px;
+  background: var(--pale);
+}
+
+.service-card h2 {
+  color: var(--navy);
+  margin-top: 0;
+}
+
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 24px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+.contact-form button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 7px;
+  background: var(--teal);
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+
+@media (max-width: 700px) {
+  .service-list {
+    flex-direction: column;
+  }
+
+  .service-card {
+    flex-basis: auto;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
